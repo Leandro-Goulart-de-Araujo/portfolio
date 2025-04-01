@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ML in Adsorption | Leandro Goulart de Araujo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .figure {
+      text-align: center;
+      animation: fadeIn 1.2s ease;
+    }
+    .figure img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .caption {
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 0.5rem;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 2rem;
+      color: #4b4be0;
+    }
+    .credits {
+      font-size: 0.85rem;
+      color: #777;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>ML in Adsorption</h1>
+    <p><strong>Project Summary:</strong> This work highlights how machine learning has been applied to model, predict, and optimize adsorption processes for various pollutants using a range of biosorbents and synthetic materials.</p>
+
+    <p><strong>Key Contributions:</strong></p>
+    <ul>
+      <li>Lead author of an article combining experimental and ML modeling of methylene blue biosorption using bone meal</li>
+      <li>Applied experimental design, ANN, and feature analysis to explain biosorption behavior</li>
+      <li>Co-author in a study combining ML, experimental design, and clustering to understand uranium removal using hydroxyapatite and bone meal</li>
+      <li>Currently developing a ML-driven framework to predict adsorption of dyes (Reactive Black 5) onto biochars using Random Forest and other algorithms</li>
+    </ul>
+
+    <p><strong>Publications:</strong></p>
+    <ul>
+      <li><a href="https://doi.org/10.3389/fenvc.2024.1451051" target="_blank">Biosorption of methylene blue by bone meal: experimental and modeling with machine learning and full factorial design – Front. Environ. Chem. (2024)</a></li>
+      <li><a href="https://doi.org/10.1007/s11356-021-17551-x" target="_blank">Uranium biosorption by hydroxyapatite and bone meal: evaluation of process variables through experimental design – ESPR (2021)</a></li>
+      <li><em>Removal of Reactive Black 5 Dye by Biochars: Experimental and Data-Driven Modeling Approaches</em> (Under preparation)</li>
+    </ul>
+
+    <div class="gallery">
+      <div class="figure">
+        <img src="neural_network_adsorption_MB.png" alt="Neural network model for MB adsorption">
+        <div class="caption">Figure 1: ANN structure and variable importance for methylene blue biosorption by bone meal</div>
+      </div>
+      <div class="figure">
+        <img src="clustering_adsorption.png" alt="Clustering for uranium biosorption">
+        <div class="caption">Figure 2: Cluster and variable analysis for uranium biosorption using hydroxyapatite and bone meal</div>
+      </div>
+      <div class="figure">
+        <img src="random_forest_remazol.png" alt="Random forest model for dye adsorption">
+        <div class="caption">Figure 3: Random forest regression results for Reactive Black 5 dye removal (in preparation)</div>
+      </div>
+    </div>
+
+    <div class="credits">
+      <p><strong>Image Credits:</strong></p>
+      <ul>
+        <li>Figure 1: Adapted from <em>Biosorption of methylene blue by bone meal</em>, Frontiers in Environmental Chemistry (2024)</li>
+        <li>Figure 2: Adapted from <em>Uranium biosorption by hydroxyapatite and bone meal</em>, Environmental Science and Pollution Research (2021)</li>
+        <li>Figure 3: From <em>Removal of Reactive Black 5 Dye by Biochars</em>, under preparation</li>
+      </ul>
+    </div>
+
+    <a href="index.html" class="back-link">&larr; Back to Portfolio</a>
+  </div>
+</body>
+</html>

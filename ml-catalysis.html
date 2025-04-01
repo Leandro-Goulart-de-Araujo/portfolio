@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ML in Catalysis | Leandro Goulart de Araujo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .figure {
+      text-align: center;
+      animation: fadeIn 1.2s ease;
+    }
+    .figure img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .caption {
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 0.5rem;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 2rem;
+      color: #4b4be0;
+    }
+    .credits {
+      font-size: 0.85rem;
+      color: #777;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>ML in Catalysis</h1>
+
+    <p><strong>Project Summary:</strong> This page highlights key contributions to the application of machine learning in catalysis, including both fundamental and applied aspects. The focus is on kinetic modeling, catalyst performance prediction, and ML-assisted reaction system design.</p>
+
+    <p><strong>Key Contributions:</strong></p>
+    <ul>
+      <li>Lead author of a comprehensive review in the Chemical Engineering Journal (CEJ) outlining current and emerging ML approaches in catalysis</li>
+      <li>Lead author of a Perspective article (under review) on ML for photocatalytic hydrogen production, addressing the fundamentals of photocatalysis, the use of conventional and data-driven approaches to solve the open challenges in the field, a comparison between photocatalysis and catalysis, as well as discussions on data collection, descriptors, and design strategies</li>
+    </ul>
+
+    <p><strong>Publications:</strong></p>
+    <ul>
+      <li><a href="https://doi.org/10.1016/j.cej.2025.160872" target="_blank">Recent developments in the use of machine learning in catalysis: A broad perspective with applications in kinetics – CEJ (2025)</a></li>
+      <li><em>Artificial Intelligence-Driven Advances in Photocatalytic Hydrogen Production</em> – under review</li>
+    </ul>
+
+    <div class="gallery">
+      <div class="figure">
+        <img src="machine_learning_framework.jpg" alt="ML framework in catalysis">
+        <div class="caption">Figure 1: Framework for integrating machine learning in catalytic system design.</div>
+      </div>
+      <div class="figure">
+        <img src="adding_data.jpg" alt="Improving datasets">
+        <div class="caption">Figure 2: Addressing data limitations by combining experimental and synthetic datasets.</div>
+      </div>
+    </div>
+
+    <div class="credits">
+      <p><strong>Image Credits:</strong> Figures adapted from Araujo et al., <em>Chemical Engineering Journal</em> (2025). <a href="https://doi.org/10.1016/j.cej.2025.160872" target="_blank">https://doi.org/10.1016/j.cej.2025.160872</a></p>
+    </div>
+
+    <a href="index.html" class="back-link">&larr; Back to Portfolio</a>
+  </div>
+</body>
+</html>

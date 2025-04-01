@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adsorption of Radionuclides | Leandro Goulart de Araujo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .figure {
+      text-align: center;
+      animation: fadeIn 1.2s ease;
+    }
+    .figure img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .caption {
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 0.5rem;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 2rem;
+      color: #4b4be0;
+    }
+    .credits {
+      font-size: 0.85rem;
+      color: #777;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Adsorption of Radionuclides</h1>
+
+    <p><strong>Project Summary:</strong> This project focused on the removal of uranium, cesium, radium, and americium from aqueous systems using different adsorbent materials, including bone meal, hydroxyapatite, chitosan-zeolite, macrophites, and standard biochars. The studies involved the evaluation of isotherms, kinetics, point of zero charge, and effects of process variables.</p>
+
+    <p><strong>Key Contributions:</strong></p>
+    <ul>
+      <li>Investigated sorption behavior of radionuclides in batch experiments</li>
+      <li>Evaluated standard and engineered adsorbents (natural and synthetic)</li>
+      <li>Applied experimental design to study key operational parameters</li>
+      <li>Characterized materials via SEM, BET, FTIR, and pHpzc</li>
+    </ul>
+
+    <p><strong>Techniques Used:</strong> Adsorption isotherms (Langmuir/Freundlich), kinetics (pseudo-1st/2nd-order), surface area analysis, pHpzc determination, gamma spectrometry, SEM/EDS.</p>
+
+    <p><strong>Publications:</strong></p>
+    <ul>
+      <li><a href="https://doi.org/10.1039/D2VA00148A" target="_blank">An adsorption agent based on chitosan–zeolite composite: environmental and radioactive liquid waste remediation</a></li>
+      <li><a href="https://doi.org/10.1007/s11356-022-19128-8" target="_blank">Biosorption of uranium from aqueous solutions by Azolla sp. and Limnobium laevigatum</a></li>
+      <li><a href="https://doi.org/10.1016/j.jenvrad.2020.106399" target="_blank">Use of calcium alginate beads and Saccharomyces cerevisiae for biosorption of 241Am</a></li>
+      <li><a href="https://doi.org/10.1007/s11356-020-09727-8" target="_blank">The use of rice and coffee husks for biosorption of U (total), 241Am, and 137Cs in radioactive liquid organic waste</a></li>
+      <li><a href="https://doi.org/10.1016/j.jenvrad.2019.03.019" target="_blank">Uranium biosorption by Lemna sp. and Pistia stratiotes</a></li>
+    </ul>
+
+    <div class="gallery">
+      <div class="figure">
+        <img src="experimental_design.gif" alt="Experimental design results">
+        <div class="caption">Figure 1: Pareto chart and contour plot from experimental design for chitosan–zeolite composite</div>
+      </div>
+      <div class="figure">
+        <img src="isotherms_lemna.jpg" alt="Model fitting for Lemna">
+        <div class="caption">Figure 2: Adsorption models applied to Lemna sp.</div>
+      </div>
+      <div class="figure">
+        <img src="SEM_lemna.jpg" alt="SEM image of Lemna sp.">
+        <div class="caption">Figure 3: SEM image of Lemna sp. surface morphology used for uranium biosorption</div>
+      </div>
+    </div>
+
+    <div class="credits">
+      <p><strong>Image Credits:</strong></p>
+      <ul>
+        <li>Figure 1: Adapted from <em>An adsorption agent based on chitosan–zeolite composite: environmental and radioactive liquid waste remediation</em>, Environmental Science: Advances (2022).</li>
+        <li>Figure 2: Adapted from <em>Uranium biosorption by Lemna sp. and Pistia stratiotes</em>, Journal of Environmental Radioactivity (2019).</li>
+        <li>Figure 3: Adapted from <em>Uranium biosorption by Lemna sp. and Pistia stratiotes</em>, Journal of Environmental Radioactivity (2019).</li>
+      </ul>
+    </div>
+
+    <a href="index.html" class="back-link">&larr; Back to Portfolio</a>
+  </div>
+</body>
+</html>

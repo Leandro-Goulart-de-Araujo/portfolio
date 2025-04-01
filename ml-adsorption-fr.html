@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ML en Adsorption | Leandro Goulart de Araujo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .figure {
+      text-align: center;
+      animation: fadeIn 1.2s ease;
+    }
+    .figure img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .caption {
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 0.5rem;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 2rem;
+      color: #4b4be0;
+    }
+    .credits {
+      font-size: 0.85rem;
+      color: #777;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>ML en Adsorption</h1>
+    <p><strong>Résumé du Projet :</strong> Ce projet met en avant l'application du machine learning pour modéliser, prédire et optimiser les processus d'adsorption de différents polluants à l'aide de biosorbants et matériaux synthétiques.</p>
+
+    <p><strong>Contributions Clés :</strong></p>
+    <ul>
+      <li>Auteur principal d'un article combinant expériences et modélisation par ML de la biosorption de bleu de méthylène par farines d'os</li>
+      <li>Application du plan d'expériences, réseaux de neurones (ANN) et analyse de variables pour interprétation des performances d'adsorption</li>
+      <li>Co-auteur d'une étude utilisant ML, plan d'expériences et clustering pour la biosorption de l’uranium par hydroxyapatite et farines d'os</li>
+      <li>Développement en cours d'une approche prédictive basée sur Random Forest pour l’adsorption de colorants (Reactive Black 5) sur biochars</li>
+    </ul>
+
+    <p><strong>Publications :</strong></p>
+    <ul>
+      <li><a href="https://doi.org/10.3389/fenvc.2024.1451051" target="_blank">Biosorption of methylene blue by bone meal: experimental and modeling with machine learning and full factorial design – Front. Environ. Chem. (2024)</a></li>
+      <li><a href="https://doi.org/10.1007/s11356-021-17551-x" target="_blank">Uranium biosorption by hydroxyapatite and bone meal: evaluation of process variables through experimental design – ESPR (2021)</a></li>
+      <li><em>Removal of Reactive Black 5 Dye by Biochars: Experimental and Data-Driven Modeling Approaches</em> (en cours de rédaction)</li>
+    </ul>
+
+    <div class="gallery">
+      <div class="figure">
+        <img src="neural_network_adsorption_MB.png" alt="Modèle de réseau neuronal pour le bleu de méthylène">
+        <div class="caption">Figure 1 : Architecture ANN et importance des variables pour la biosorption de bleu de méthylène</div>
+      </div>
+      <div class="figure">
+        <img src="clustering_adsorption.png" alt="Clustering pour la biosorption d'uranium">
+        <div class="caption">Figure 2 : Clustering et analyse de variables pour l’adsorption d’uranium par hydroxyapatite et farines d’os</div>
+      </div>
+      <div class="figure">
+        <img src="random_forest_remazol.png" alt="Random Forest pour adsorption de colorant">
+        <div class="caption">Figure 3 : Prédiction par Random Forest de l’adsorption du colorant Reactive Black 5 (en préparation)</div>
+      </div>
+    </div>
+
+    <div class="credits">
+      <p><strong>Crédits d’Images :</strong></p>
+      <ul>
+        <li>Figure 1 : Adaptée de <em>Biosorption of methylene blue by bone meal</em>, Frontiers in Environmental Chemistry (2024)</li>
+        <li>Figure 2 : Adaptée de <em>Uranium biosorption by hydroxyapatite and bone meal</em>, Environmental Science and Pollution Research (2021)</li>
+        <li>Figure 3 : Issue de <em>Removal of Reactive Black 5 Dye by Biochars</em>, en cours</li>
+      </ul>
+    </div>
+
+    <a href="index-fr.html" class="back-link">&larr; Accueil</a>
+  </div>
+</body>
+</html>

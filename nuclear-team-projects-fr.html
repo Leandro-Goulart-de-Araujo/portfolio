@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travaux en Équipe | Leandro Goulart de Araujo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .figure {
+      text-align: center;
+      animation: fadeIn 1.2s ease;
+    }
+    .figure img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .caption {
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 0.5rem;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 2rem;
+      color: #4b4be0;
+    }
+    .credits {
+      font-size: 0.85rem;
+      color: #777;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Travaux en Équipe</h1>
+
+    <p><strong>Résumé du Projet :</strong> Cette page met en avant des projets auxquels j'ai collaboré en tant que co-auteur ou membre d'équipe, contribuant à des initiatives interdisciplinaires sur la caractérisation des matériaux, les géopolymères et des stratégies de remédiation biologique.</p>
+
+    <p><strong>Contributions Clés :</strong></p>
+    <ul>
+      <li>Développement du design expérimental pour la synthèse et les tests de matériaux géopolymériques pour l'immobilisation des déchets, incluant des modèles mathématiques empiriques</li>
+      <li>Participation à la caractérisation de champignons retrouvés dans des conteneurs fermés depuis l'accident radiologique de Goiânia (30 ans)</li>
+      <li>Contribution à la discussion sur l’adsorption de l’uranium via des biochars et biochars activés</li>
+      <li>Appui à la discussion sur l’effet de l’utilisation du plasma thermique pour la dégradation de déchets radioactifs solides</li>
+    </ul>
+
+    <p><strong>Techniques Impliquées :</strong> FTIR, MEB/EDS, spectroscopie gamma, synthèse de géopolymères, ICP OES</p>
+
+    <p><strong>Publications Pertinentes :</strong></p>
+    <ul>
+      <li><a href="https://doi.org/10.1021/acsomega.4c07195" target="_blank">Toward Sustainable Radioactive Waste Management: Geopolymerization of Sewage Sludge Ash as a Viable Solution – ACS Omega (2025)</a></li>
+      <li><a href="https://doi.org/10.1007/s11356-023-25247-7" target="_blank">Prospects for fungal bioremediation of unburied waste packages from the Goiânia radiological accident – Environmental Science and Pollution Research (2023)</a></li>
+      <li><a href="https://doi.org/10.1016/j.envpol.2020.116022" target="_blank">Uranium removal from aqueous solution using macauba endocarp-derived biochar: Effect of physical activation (2021)</a></li>
+      <li><a href="https://doi.org/10.1016/j.anucene.2021.108433" target="_blank">Experimental study on treatment of simulated radioactive waste by thermal plasma: Temporal evaluation of stable Co and Cs (2021)</a></li>
+    </ul>
+
+    <div class="gallery">
+      <div class="figure">
+        <img src="fungispores.jpg" alt="Spores fongiques">
+        <div class="caption">Figure 1 : Vue microscopique des spores fongiques retrouvées dans des colis de déchets non enterrés</div>
+      </div>
+      <div class="figure">
+        <img src="sem_activatedbiocharv2.jpg" alt="SEM de biochar activé">
+        <div class="caption">Figure 2 : Images MEB d’un biochar activé physiquement</div>
+      </div>
+      <div class="figure">
+        <img src="geopolymer_results2.jpg" alt="Géopolymères avec additifs">
+        <div class="caption">Figure 3 : Géopolymères synthétisés avec charbons activés et résines échangeuses d’ions</div>
+      </div>
+    </div>
+
+    <div class="credits">
+      <p><strong>Crédits d’Images :</strong></p>
+      <ul>
+        <li>Figure 1 : Adaptée de <em>Prospects for fungal bioremediation of unburied waste packages from the Goiânia radiological accident</em>, Environmental Science and Pollution Research (2023).</li>
+        <li>Figure 2 : Adaptée de <em>Uranium removal from aqueous solution using macauba endocarp-derived biochar: Effect of physical activation</em>, Environmental Pollution (2021).</li>
+        <li>Figure 3 : Adaptée de <em>Toward Sustainable Radioactive Waste Management: Geopolymerization of Sewage Sludge Ash as a Viable Solution</em>, ACS Omega (2025).</li>
+      </ul>
+    </div>
+
+    <a href="index-fr.html" class="back-link">&larr; Accueil</a>
+  </div>
+</body>
+</html>

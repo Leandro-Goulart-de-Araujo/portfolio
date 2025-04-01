@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adsorption de Colorants et Métaux | Leandro Goulart de Araujo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .figure {
+      text-align: center;
+      animation: fadeIn 1.2s ease;
+    }
+    .figure img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .caption {
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 0.5rem;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 2rem;
+      color: #4b4be0;
+    }
+    .credits {
+      font-size: 0.85rem;
+      color: #777;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Adsorption de Colorants et Métaux</h1>
+    <p><strong>Résumé du Projet :</strong> Cette page résume les travaux de recherche sur l’adsorption de colorants organiques et de métaux toxiques à partir de solutions aqueuses en utilisant des adsorbants synthétiques et à faible coût.</p>
+
+    <p><strong>Contributions Clés :</strong></p>
+    <ul>
+      <li>Auteur principal d’une étude combinant apprentissage automatique et plan d’expériences pour l’élimination du bleu de méthylène avec de la poudre d’os</li>
+      <li>Développement d’un cadre basé sur le point de charge nulle (pHpzc) pour évaluer les biochars pour l’adsorption de colorants cationiques</li>
+      <li>Co-auteur d’un travail sur la synthèse et la caractérisation de silicate d’yttrium pour l’élimination du plomb (Pb) et du cadmium (Cd)</li>
+    </ul>
+
+    <p><strong>Publications :</strong></p>
+    <ul>
+      <li><a href="https://doi.org/10.3389/fenvc.2024.1451051" target="_blank">Biosorption of methylene blue by bone meal: experimental and modeling with machine learning and full factorial design – Front. Environ. Chem. (2024)</a></li>
+      <li><a href="http://dx.doi.org/10.21926/rpm.2202010" target="_blank">Role of Point of Zero Charge in the Adsorption of Cationic Textile Dye on Standard Biochars – Recent Progress in Materials (2022)</a></li>
+      <li><a href="https://doi.org/10.1016/j.jece.2020.103922" target="_blank">Synthesis and physicochemical characterization of a novel adsorbent based on yttrium silicate – JECE (2020)</a></li>
+    </ul>
+
+    <div class="gallery">
+      <div class="figure">
+        <img src="MB_adsorption.jpg" alt="Adsorption du bleu de méthylène">
+        <div class="caption">Figure 1 : Élimination du bleu de méthylène par poudre d’os – valeurs expérimentales et prédites par ML</div>
+      </div>
+      <div class="figure">
+        <img src="PZC_MB_adsorption.jpg" alt="pHpzc et adsorption">
+        <div class="caption">Figure 2 : Relation entre le point de charge nulle et l’adsorption de colorant cationique sur biochars</div>
+      </div>
+      <div class="figure">
+        <img src="Pb_Cd_adsorption.jpg" alt="Adsorption Pb Cd silicate yttrium">
+        <div class="caption">Figure 3 : Performance du matériau à base de silicate d’yttrium pour l’adsorption de Pb et Cd</div>
+      </div>
+    </div>
+
+    <div class="credits">
+      <p><strong>Crédits d’Images :</strong></p>
+      <ul>
+        <li>Figure 1 : Adaptée de <em>Biosorption of methylene blue by bone meal</em>, Frontiers in Environmental Chemistry (2024)</li>
+        <li>Figure 2 : Adaptée de <em>Role of Point of Zero Charge in the Adsorption of Cationic Textile Dye on Standard Biochars</em>, Recent Progress in Materials (2022)</li>
+        <li>Figure 3 : Adaptée de <em>Synthesis of a novel adsorbent based on yttrium silicate</em>, Journal of Environmental Chemical Engineering (2020)</li>
+      </ul>
+    </div>
+
+    <a href="index-fr.html" class="back-link">&larr; Accueil</a>
+  </div>
+</body>
+</html>

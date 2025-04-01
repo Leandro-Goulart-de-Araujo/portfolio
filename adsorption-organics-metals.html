@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adsorption of Dyes and Metals | Leandro Goulart de Araujo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .figure {
+      text-align: center;
+      animation: fadeIn 1.2s ease;
+    }
+    .figure img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .caption {
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 0.5rem;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 2rem;
+      color: #4b4be0;
+    }
+    .credits {
+      font-size: 0.85rem;
+      color: #777;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Adsorption of Dyes and Metals</h1>
+    <p><strong>Project Summary:</strong> This page summarizes research efforts on the adsorption of organic dyes and toxic metals from aqueous solutions using engineered and low-cost sorbents.</p>
+
+    <p><strong>Key Contributions:</strong></p>
+    <ul>
+      <li>Lead author of a study applying ML and experimental design for methylene blue removal using bone meal</li>
+      <li>Developed framework based on point of zero charge (pHpzc) to evaluate biochars for cationic dye adsorption</li>
+      <li>Co-authored a work on synthesis and characterization of yttrium silicate for Pb(II) and Cd(II) removal</li>
+    </ul>
+
+    <p><strong>Publications:</strong></p>
+    <ul>
+      <li><a href="https://doi.org/10.3389/fenvc.2024.1451051" target="_blank">Biosorption of methylene blue by bone meal: experimental and modeling with machine learning and full factorial design – Front. Environ. Chem. (2024)</a></li>
+      <li><a href="http://dx.doi.org/10.21926/rpm.2202010" target="_blank">Role of Point of Zero Charge in the Adsorption of Cationic Textile Dye on Standard Biochars – Recent Progress in Materials (2022)</a></li>
+      <li><a href="https://doi.org/10.1016/j.jece.2020.103922" target="_blank">Synthesis and physicochemical characterization of a novel adsorbent based on yttrium silicate – JECE (2020)</a></li>
+    </ul>
+
+    <div class="gallery">
+      <div class="figure">
+        <img src="MB_adsorption.jpg" alt="MB adsorption bone meal">
+        <div class="caption">Figure 1: Methylene blue removal by bone meal with ML-predicted and experimental responses</div>
+      </div>
+      <div class="figure">
+        <img src="PZC_MB_adsorption.jpg" alt="pHpzc-based evaluation for dye adsorption">
+        <div class="caption">Figure 2: Relationship between point of zero charge and adsorption of cationic dye on biochars</div>
+      </div>
+      <div class="figure">
+        <img src="Pb_Cd_adsorption.jpg" alt="Lead and cadmium removal with yttrium silicate">
+        <div class="caption">Figure 3: Performance of yttrium silicate material for lead and cadmium adsorption</div>
+      </div>
+    </div>
+
+    <div class="credits">
+      <p><strong>Image Credits:</strong></p>
+      <ul>
+        <li>Figure 1: Adapted from <em>Biosorption of methylene blue by bone meal</em>, Frontiers in Environmental Chemistry (2024)</li>
+        <li>Figure 2: Adapted from <em>Role of Point of Zero Charge in the Adsorption of Cationic Textile Dye on Standard Biochars</em>, Recent Progress in Materials (2022)</li>
+        <li>Figure 3: Adapted from <em>Synthesis of a novel adsorbent based on yttrium silicate</em>, Journal of Environmental Chemical Engineering (2020)</li>
+      </ul>
+    </div>
+
+    <a href="index.html" class="back-link">&larr; Back to Portfolio</a>
+  </div>
+</body>
+</html>

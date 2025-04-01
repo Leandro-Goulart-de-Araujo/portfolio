@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Radioactive Oil Sludge Treatment | Leandro Goulart de Araujo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .figure {
+      text-align: center;
+      animation: fadeIn 1.2s ease;
+    }
+    .figure img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .caption {
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 0.5rem;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 2rem;
+      color: #4b4be0;
+    }
+    .credits {
+      font-size: 0.85rem;
+      color: #777;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Radioactive Oil Sludge Treatment</h1>
+    <p><strong>Project Summary:</strong> This project focused on the remediation of radioactive petroleum oil sludge using advanced oxidation processes (AOPs), surfactants, and microwave-assisted processes. Through ozonation and surfactants & microwaves, the objective was to degrade the organic fraction and stabilize radioactive contaminants, in addition to diminish volume, for safer disposal.</p>
+
+    <p><strong>Key Contributions:</strong></p>
+    <ul>
+      <li>Developed an ozonation system for the treatment of radioactive oil sludge</li>
+      <li>Applied gamma spectrometry for process monitoring</li>
+      <li>Analyzed the behavior of radionuclides (Ra, Pb) during treatment</li>
+    </ul>
+
+    <p><strong>Techniques Used:</strong> Ozone treatment, microwave pyrolysis, surfactants, electron beam irradiation, and gamma spectrometry</p>
+
+    <p><strong>Publications:</strong></p>
+    <ul>
+      <li><a href="https://doi.org/10.1016/j.jece.2020.104128" target="_blank">Physicochemical modifications of radioactive oil sludge by ozone treatment – JECE (2020)</a></li>
+      <li><a href="https://doi.org/10.1016/j.petrol.2022.110168" target="_blank">Enhanced removal of radium from radioactive oil sludge using microwave irradiation and non-ionic surfactant – JPSE (2022)</a></li>
+      <li><a href="https://doi.org/10.15392/bjrs.v9i1A.1416" target="_blank">Preliminary studies on electron beam irradiation as a treatment method of radioactive oil sludge – BJRS</a></li>
+      <li><em>Microwave Pyrolysis for Efficient Treatment of Radioactive Oil Sludge Waste: Experimental and Machine Learning Approaches</em> (In consideration)</li>
+    </ul>
+
+    <div class="gallery">
+      <div class="figure">
+        <img src="removal-ra-chart.jpg" alt="Bar chart - removal of Ra-226 and Ra-228">
+        <div class="caption">Figure 1: Radium concentration and removal percentage by surfactant concentration and temperature</div>
+      </div>
+      <div class="figure">
+        <img src="process-diagram.jpg" alt="Process diagram and analysis results">
+        <div class="caption">Figure 2: Process overview, FTIR and TGA results of ozonation treatment</div>
+      </div>
+      <div class="figure">
+        <img src="cement-hardening.png" alt="Hardening of oil sludge with cement">
+        <div class="caption">Figure 3: Time-dependent hardening behavior of oil sludge mixed with Portland cement</div>
+      </div>
+    </div>
+
+    <div class="credits">
+      <p><strong>Image Credits:</strong></p>
+      <ul>
+        <li>Figure 1: Adapted from <em>Enhanced removal of radium from radioactive oil sludge using microwave irradiation and non-ionic surfactant</em>, Journal of Petroleum Science and Engineering (2022).</li>
+        <li>Figure 2: Adapted from <em>Physicochemical modifications of radioactive oil sludge by ozone treatment</em>, Journal of Environmental Chemical Engineering (2020).</li>
+        <li>Figure 3: Adapted from <em>Preliminary studies on electron beam irradiation as a treatment method of radioactive oil sludge</em>, Brazilian Journal of Radiation Sciences (2020).</li>
+      </ul>
+    </div>
+
+    <a href="index.html" class="back-link">&larr; Back to Portfolio</a>
+  </div>
+</body>
+</html>

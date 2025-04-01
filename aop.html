@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Oxidation Processes | Leandro Goulart de Araujo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .figure {
+      text-align: center;
+      animation: fadeIn 1.2s ease;
+    }
+    .figure img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .caption {
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 0.5rem;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 2rem;
+      color: #4b4be0;
+    }
+    .credits {
+      font-size: 0.85rem;
+      color: #777;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Advanced Oxidation Processes</h1>
+
+    <p><strong>Project Summary:</strong> This section gathers projects involving the degradation of organic pollutants through processes such as ozonation, UV/H<sub>2</sub>O<sub>2</sub>, electron beam irradiation, and Fenton's reagent. It includes kinetic modeling, materials evaluation, and experimental design approaches.</p>
+
+    <p><strong>Key Contributions:</strong></p>
+    <ul>
+      <li>Developed and modeled UV/H<sub>2</sub>O<sub>2</sub> degradation of bisphenol A using experimental design and kinetic approaches</li>
+      <li>Evaluated photocatalysts (TiO<sub>2</sub>) under solar simulation for atrazine degradation</li>
+      <li>Applied ozonation in batch mode to treat textile wastewater and radioactive oil sludge</li>
+      <li>Studied the degradation of ion exchange resins and organic sludges using Fenton and e-beam techniques</li>
+    </ul>
+
+    <p><strong>Publications:</strong></p>
+    <ul>
+      <li><a href="https://doi.org/10.1515/ijcre-2022-0186" target="_blank">TiO<sub>2</sub> P25 and Kronos vlp 7000 materials activated by simulated solar light for atrazine degradation – IJCRE (2023)</a></li>
+      <li><a href="https://doi.org/10.1080/01919512.2022.2088470" target="_blank">Physicochemical Modifications and Decolorization of Textile Wastewater by Ozonation – Ozone: Science & Engineering (2023)</a></li>
+      <li><a href="https://doi.org/10.15392/bjrs.v9i1A.1416" target="_blank">Preliminary studies on electron beam irradiation as a treatment method of radioactive oil sludge – BJRS (2021)</a></li>
+      <li><a href="https://doi.org/10.1007/s11356-019-07361-7" target="_blank">Degradation of bisphenol A by the UV/H<sub>2</sub>O<sub>2</sub> process: a kinetic study – ESPR (2020)</a></li>
+      <li><a href="https://doi.org/10.1016/j.jece.2020.104128" target="_blank">Physicochemical modifications of radioactive oil sludge by ozone treatment – JECE (2020)</a></li>
+      <li><a href="https://doi.org/10.3390/environments5110123" target="_blank">Reaction of Ion Exchange Resins with Fenton's Reagent – Environments (2018)</a></li>
+      <li><a href="https://doi.org/10.1002/cjce.22997" target="_blank">Degradation of Bisphenol A by the UV and UV/H<sub>2</sub>O<sub>2</sub> Processes – CJCE (2017)</a></li>
+    </ul>
+
+    <div class="gallery">
+      <div class="figure">
+        <img src="oil_sludge_ozonation.jpg" alt="Ozonation of oil sludge">
+        <div class="caption">Figure 1: Physicochemical modifications of radioactive oil sludge by ozone treatment</div>
+      </div>
+      <div class="figure">
+        <img src="pred_exp_kinetics.jpg" alt="Kinetic prediction BPA">
+        <div class="caption">Figure 2: Predicted vs experimental degradation of bisphenol A using UV/H<sub>2</sub>O<sub>2</sub> process</div>
+      </div>
+      <div class="figure">
+        <img src="TOC_removal_BPA.jpg" alt="TOC and experimental design">
+        <div class="caption">Figure 3: TOC removal and variable analysis for bisphenol A degradation</div>
+      </div>
+    </div>
+
+    <div class="credits">
+      <p><strong>Image Credits:</strong></p>
+      <ul>
+        <li>Figure 1: Adapted from <em>Physicochemical modifications of radioactive oil sludge by ozone treatment</em>, JECE (2020)</li>
+        <li>Figure 2: Adapted from <em>Degradation of bisphenol A by the UV/H<sub>2</sub>O<sub>2</sub> process</em>, ESPR (2020)</li>
+        <li>Figure 3: Adapted from <em>Degradation of Bisphenol A by the UV and UV/H<sub>2</sub>O<sub>2</sub> Processes</em>, CJCE (2017)</li>
+      </ul>
+    </div>
+
+    <a href="index.html" class="back-link">&larr; Back to Portfolio</a>
+  </div>
+</body>
+</html>
