@@ -3,86 +3,216 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Leandro Goulart de Araujo | Portfolio</title>
+  <title>Leandro Goulart de Araujo – CV</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
   <style>
-    .lang-switch {
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+      color: #333;
+      font-size: 11px;
+    }
+    header {
+      background: linear-gradient(90deg, #4b6cb7, #182848);
+      color: white;
+      padding: 1rem 2rem 0.3rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      text-align: center;
+      position: relative;
+    }
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 100%;
+      margin-bottom: 0;
+    }
+    .profile-pic {
+      width: 85px;
+      height: 85px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid white;
+    }
+    .header-text {
+      text-align: left;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex: 1;
+      margin-bottom: 0;
+      font-size: 14px;
+    }
+    .header-text h1 {
+      color: white;
+      margin: 0.3rem 0;
+      font-size: 1.6rem;
+    }
+    .header-text p, .header-text a, .header-text i {
+      color: #f8f8f8;
+      margin: 0.3rem 0;
+    }
+    .header-text strong {
+      color: #ffffff;
+    }
+    .language-switcher {
       position: absolute;
       top: 1rem;
       right: 1rem;
     }
-    .lang-switch a {
+    .language-switcher button {
+      background: transparent;
+      border: 1px solid white;
       color: white;
-      background: #4b6cb7;
-      border-radius: 5px;
-      padding: 0.3rem 0.6rem;
-      text-decoration: none;
+      padding: 0.4rem 0.8rem;
       margin-left: 0.5rem;
-    }
-    .lang-switch a:hover {
-      background: #182848;
-    }
-    .cv-button {
-      display: inline-block;
-      margin: 1rem auto;
-      padding: 0.5rem 1rem;
-      background-color: #4b6cb7;
-      color: white;
-      text-decoration: none;
       border-radius: 5px;
-      font-weight: 500;
+      cursor: pointer;
     }
-    .cv-button:hover {
-      background-color: #182848;
+    .language-switcher button:hover {
+      background: white;
+      color: #182848;
     }
-    .back-to-portfolio {
-      display: block;
-      text-align: center;
-      margin: 2rem auto 1rem;
+    .container {
+      max-width: 960px;
+      margin: auto;
+      background: white;
+      padding: 0.8rem 1.1rem;
+    }
+    h2 {
+      color: #182848;
+      margin-top: 1rem;
+      font-size: 1.05rem;
+    }
+    .section {
+      margin-bottom: 0.6rem;
+    }
+    .item {
+      margin-bottom: 0.3rem;
+    }
+    .item h3 {
+      margin-bottom: 0.15rem;
       color: #4b6cb7;
-      text-decoration: none;
-      font-weight: 500;
+      font-size: 0.9rem;
+      display: flex;
+      justify-content: space-between;
+    }
+    .item h3 .date {
+      font-weight: normal;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    .social-icons {
+      margin-top: 0.3rem;
+    }
+    .social-icons a {
+      margin: 0 0.4rem;
+      color: white;
+      font-size: 1.05rem;
+    }
+    .social-icons a:last-child {
+      font-size: 0.9rem;
+    }
+    @media print {
+      header, .container { box-shadow: none; background: white; }
+      .language-switcher { display: none; }
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="lang-switch">
-      <a href="index-fr.html">FR</a>
+    <div class="header-left">
+      <img src="profilePicture.jpg" alt="Leandro Goulart" class="profile-pic">
+      <div class="header-text">
+        <h1>Leandro Goulart de Araujo</h1>
+        <p><strong>Chemical Engineer</strong> | <strong>Machine Learning</strong> | <strong>Nuclear Technology</strong></p>
+        <p>📍 <span>France & Brazil</span> | 🌍 <span>Multilingual: PT · EN · FR · ES</span></p>
+        <p>📧 <strong>lgoulart@alumni.usp.br</strong> · 📞 <strong>+33 7 81 54 46 43</strong></p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/lgaraujo/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://scholar.google.com/citations?user=FM7DpukAAAAJ" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+          <a href="https://orcid.org/0000-0002-9358-0942" target="_blank"><i class="fas fa-id-badge"></i></a>
+          <a href="cv_fr.html" target="_blank"><i class="fas fa-language"></i> Français</a>
+        </div>
+      </div>
     </div>
-    <img src="profilePicture.jpg" alt="Leandro" class="profile-pic">
-    <h1>Leandro Goulart de Araujo</h1>
-    <p class="icons">
-      <i class="fas fa-flask"></i> Chemical Engineer |
-      <i class="fas fa-robot"></i> Machine Learning |
-      <i class="fas fa-radiation"></i> Nuclear Technology
-    </p>
-    <p class="icons">
-      <i class="fas fa-map-marker-alt"></i> France & Brazil |
-      <i class="fas fa-globe"></i> Multilingual: PT | EN | FR | ES
-    </p>
-    <p class="icons">
-      <i class="fas fa-envelope"></i> <a href="mailto:lgoulart@alumni.usp.br">lgoulart@alumni.usp.br</a> |
-      <i class="fas fa-phone"></i> +33 7 81 54 46 43
-    </p>
-    <p class="icons">
-      <a href="https://www.linkedin.com/in/lgaraujo/"><i class="fab fa-linkedin"></i></a>
-      <a href="https://scholar.google.com/citations?user=FM7DpukAAAAJ&hl=pt-BR"><i class="fas fa-graduation-cap"></i></a>
-      <a href="https://orcid.org/0000-0002-9358-0942"><i class="fas fa-id-badge"></i></a>
-    </p>
-    <a href="cv.html" class="cv-button">Download CV (EN)</a>
+    <div class="language-switcher">
+      <button onclick="window.location.href='cv_fr.html'">FR</button>
+    </div>
   </header>
 
   <div class="container">
-    <!-- existing content remains unchanged -->
+    <section class="section">
+      <h2>Professional Summary</h2>
+      <p>Detail-oriented chemical engineer with over 14 years of experience in environmental technologies, catalysis, radioactive waste management, and machine learning. Skilled in kinetic modeling, AOPs, photocatalysis, data science, and international R&D collaborations in Brazil, Argentina, and France.</p>
+    </section>
+
+    <section class="section">
+      <h2>Education</h2>
+      <div class="item">
+        <h3><span>MBA in Data Science and Analytics, University of São Paulo, Brazil</span><span class="date">2021–2022</span></h3>
+        <p>Final project: “Photodegradation of pharmaceutical and personal care products by photocatalysis: the role of machine learning”</p>
+      </div>
+      <div class="item">
+        <h3><span>MBA in Project Management, University of São Paulo, Brazil</span><span class="date">2019–2020</span></h3>
+        <p>Final project: “Risk management structure in innovative RD&I projects in the management of radioactive waste”</p>
+      </div>
+      <div class="item">
+        <h3><span>Ph.D. in Chemical Engineering, University of São Paulo, Brazil</span><span class="date">2013–2018</span></h3>
+        <p>Visiting Ph.D. Student, Universidad Nacional del Litoral, Argentina (6 months)<br>Thesis: “Photo-oxidative degradation of bisphenol A: Process study and kinetic modeling”</p>
+      </div>
+      <div class="item">
+        <h3><span>Master’s in Nuclear Technology, University of São Paulo, Brazil</span><span class="date">2011–2013</span></h3>
+        <p>Dissertation: “Degradation of ion exchange resins with Fenton’s reagent”</p>
+      </div>
+      <div class="item">
+        <h3><span>Bachelor’s in Chemical Engineering, FAE, Brazil</span><span class="date">2006–2010</span></h3>
+        <p>Final project: “Historical reconstitution of fluorine content in sediment profiles through geochronology”</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Experience</h2>
+      <div class="item">
+        <h3><span>Postdoctoral Researcher – CNRS IRCELYON</span><span class="date">2023–2025</span></h3>
+        <p>CFD and kinetic modeling of biogas reforming using microwave-heated fluidized-bed reactors. AI-based modeling for catalyst systems.</p>
+      </div>
+      <div class="item">
+        <h3><span>Research Engineer – SATT Sayens / Université de Lorraine</span><span class="date">2023</span></h3>
+        <p>Green synthesis of MOFs for hydrogen and CO₂ storage.</p>
+      </div>
+      <div class="item">
+        <h3><span>Postdoctoral Researcher – Institut Jean Lamour</span><span class="date">2022–2023</span></h3>
+        <p>Photocatalysts based on mesoporous carbon from tannins for water treatment under solar light.</p>
+      </div>
+      <div class="item">
+        <h3><span>Postdoctoral Researcher – IPEN/CNEN</span><span class="date">2019–2021</span></h3>
+        <p>Treatment of radioactive oil sludge using AOPs, surfactants, electron beam irradiation, and chemical characterization techniques.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Publications (Selected)</h2>
+      <ul>
+        <li><em>Recent developments in the use of machine learning in catalysis: A broad perspective with applications in kinetics</em> – CEJ (2025)</li>
+        <li><em>Direct biogas reforming to turquoise H₂ and carbon material in a catalytic fluidised-bed reactor</em> – NJC (2024)</li>
+        <li><em>Physicochemical modifications of radioactive oil sludge by ozone treatment</em> – JECE (2020)</li>
+      </ul>
+    </section>
   </div>
 
-  <a href="index.html" class="back-to-portfolio">&larr; Back to Portfolio</a>
-
-  <footer>
-    &copy; 2025 Leandro Goulart de Araujo | Portfolio built with 💡 and 🧪
-  </footer>
+  <script>
+    function switchLang(lang) {
+      alert('Language switching not implemented yet.');
+    }
+  </script>
 </body>
 </html>
