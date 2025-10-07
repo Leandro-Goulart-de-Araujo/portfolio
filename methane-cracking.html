@@ -7,24 +7,38 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 2rem auto;
+      max-width: 900px;
+      line-height: 1.6;
+    }
+
     .back-link {
       display: inline-block;
       margin-top: 2rem;
       color: #4b4be0;
     }
-    .carbon-image {
+
+    /* Unified image style for all figures */
+    .figure {
       margin: 2rem 0;
       text-align: center;
     }
-    .carbon-image img {
-      max-width: 100%;
+
+    .figure img {
+      width: 600px; /* define fixed width */
+      max-width: 100%; /* responsive for smaller screens */
       height: auto;
       border: 1px solid #ccc;
       border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
-    .carbon-image p {
+
+    .caption {
       font-size: 0.9rem;
       color: #555;
+      margin-top: 0.5rem;
     }
   </style>
 </head>
@@ -42,19 +56,19 @@
       <li>Presented original results at international conferences on fluidized-bed CFD and microwave heating</li>
     </ul>
 
-    <div class="carbon-image">
+    <div class="figure">
       <img src="carbon_balance.png" alt="Carbon balance and methane conversion graph">
       <div class="caption">Figure 1: Comparison of carbon balance and methane conversion in different reforming conditions.</div>
     </div>
 
-    <div class="ETEM-carbon">
+    <div class="figure">
       <img src="ETEM_carbon.jpg" alt="ETEM of the catalyst">
       <div class="caption">Figure 2: ETEM picture of the Fe@C catalyst under biogas atmosphere (2 mbar, CH<sub>4</sub>:CO<sub>2</sub> 70:30) at various temperatures.</div>
     </div>
 
     <p><strong>Publications:</strong></p>
     <ul>
-      <li><a href = "https://doi.org/10.1016/j.cattod.2025.115430" target="_blank">Methane pyrolysis into hydrogen and solid carbon: A comparative analysis of conventional and microwave heating approaches - Catalysis Today (2025)</a></li>
+      <li><a href="https://doi.org/10.1016/j.cattod.2025.115430" target="_blank">Methane pyrolysis into hydrogen and solid carbon: A comparative analysis of conventional and microwave heating approaches - Catalysis Today (2025)</a></li>
       <li><a href="https://doi.org/10.1039/D4NJ00846D" target="_blank">Direct biogas reforming to turquoise H<sub>2</sub> and carbon material in a catalytic fluidised-bed reactor – New Journal of Chemistry (2024)</a></li>   
       <li><em>CFD Investigation of Methane Pyrolysis on Fe@C Catalyst: The Positive Role of Carbon Formation in a Fluidized Bed Reactor</em> – In preparation (lead author)</li>
     </ul>
@@ -63,7 +77,3 @@
   </div>
 </body>
 </html>
-
-
-
-
